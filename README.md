@@ -1,49 +1,116 @@
-# Wallpaper Looper Pro
 
-Minimal, production-like CLI tool to scrape or loop local wallpapers with features useful for users and researchers.
+<div align="center">  
 
-## Features
-- Scrape random wallpapers from Unsplash (by category and resolution).
-- Loop user-provided local images from a folder.
-- Save downloaded images into `images/` and log metadata in `metadata.json` (suitable for later use in training).
-- Options to shuffle, preview, randomize order and intervals, auto-cleanup old images.
-- Cross-platform attempts to set desktop wallpaper (Windows, macOS, GNOME Linux).
-- Minimal dependency: `requests`.
+# 🖼️ Wallpaper Looper Pro
 
-## Quick start
+**Minimal • Smart • Beautiful**
 
-1. Create a virtual environment and install dependencies:
+Loop, scrape, and manage wallpapers effortlessly.
+Made for **creators, researchers, and everyday dreamers.**
+
+![GitHub release](https://img.shields.io/badge/release-v1.0-blue)
+![License](https://img.shields.io/badge/license-MIT-green)
+![Python](https://img.shields.io/badge/python-3.10+-yellow)
+
+</div>  
+
+---
+
+## 🌟 Why Wallpaper Looper Pro?
+
+Because your desktop deserves more than one face.
+This isn’t just a wallpaper changer — it’s a **wallpaper workflow tool**.
+
+* 🎨 Collect images from **Unsplash** by category & resolution
+* 🔀 Shuffle, randomize, or preview wallpapers
+* 📁 Store images neatly in `images/` with **metadata.json** logs
+* ⚡ Minimal, lightweight, and **cross-platform**
+* 🧹 Smart cleanup so storage never gets messy
+
+---
+
+## ✨ Features
+
+| Feature                | Description                                         |
+| ---------------------- | --------------------------------------------------- |
+| 🌄 **Online Scraping** | Pull high-quality wallpapers directly from Unsplash |
+| 🖼️ **Local Looping**  | Reuse your own folders of images                    |
+| 🔀 **Randomization**   | Shuffle images & intervals for fresh vibes          |
+| 📊 **Metadata Logs**   | JSON + optional logs for research or datasets       |
+| 💻 **Cross-Platform**  | Windows, macOS, GNOME Linux wallpaper setting       |
+| 🧹 **Auto-Clean**      | Remove stale images to save space                   |
+
+---
+
+## 🚀 Quick Start
+
 ```bash
+# Create environment
 python -m venv venv
-source venv/bin/activate   # or `venv\\Scripts\\activate` on Windows
+source venv/bin/activate   # macOS/Linux
+venv\Scripts\activate      # Windows
+
+# Install deps
 pip install -r requirements.txt
-```
 
-2. Run:
-```bash
+# Run with online wallpapers
 python wallpaper_looper.py --count 6 --interval 20 --category nature
+
+# Run with local wallpapers
+python wallpaper_looper.py --local ./my_images --count 10 --shuffle
 ```
 
-3. Use local images:
-```bash
-python wallpaper_looper.py --local /path/to/images --count 10 --shuffle
+---
+
+## 🎥 Live Demo
+
+*(Recommended: Add a looping GIF or MP4 here — e.g. wallpapers changing every 3s)*
+
+![Demo Preview](assets/demo.gif)
+
+---
+
+## 📂 Outputs
+
+```
+📂 images/            → Downloaded wallpapers  
+📝 metadata.json      → Metadata log (great for AI training datasets)  
+📜 wallpaper_looper.log → Optional runtime log (--log flag)  
 ```
 
-4. Preview mode (no wallpaper changes):
-```bash
-python wallpaper_looper.py --local ./my_photos --preview --count 5
-```
+---
 
-5. Randomization examples:
-```bash
-# Randomize order every cycle and use random intervals between 10 and 60 seconds
-python wallpaper_looper.py --local ./photos --randomize-order --randomize-intervals --min-interval 10 --max-interval 60
-```
+## 🛠️ Use Cases
 
-## Outputs
-- `images/` — downloaded images stored here
-- `metadata.json` — JSON array of metadata entries (download info + runtime logs). Useful for training imaging models.
-- `wallpaper_looper.log` — optional runtime log when `--log` flag is used.
+* 🔬 **Researchers** – Build image datasets for ML/AI experiments
+* 🎨 **Creators** – Moodboards, references, and inspiration loops
+* 🖥️ **Users** – Keep your desktop dynamic & alive
+* 💻 **Developers** – Lightweight wallpaper testing tool
 
-## License
-MIT
+---
+
+## 🌍 Vision
+
+> *“A wallpaper isn’t just a background. It’s a daily reminder of mood, creativity, and perspective.”*
+
+Wallpaper Looper Pro is built to give you **control + automation** in one minimal tool.
+
+---
+
+## 👤 Author
+
+**Wallace Brown**
+Founder @ **LeadDevCorps** 🚀
+Automating creativity for **Africa and beyond 🌍**
+
+[![LinkedIn](https://img.shields.io/badge/LinkedIn--blue?logo=linkedin\&logoColor=white)](https://linkedin.com/in/okekewallace)
+[![GitHub](https://img.shields.io/badge/GitHub--black?logo=github\&logoColor=white)](https://github.com/wallaceokeke)
+
+---
+
+## 📜 License
+
+Licensed under the **MIT License** — see [LICENSE](LICENSE).
+
+---
+
